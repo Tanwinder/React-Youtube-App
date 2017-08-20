@@ -1,21 +1,22 @@
-// import React from 'react';                 // functional component
-//
-// const VideoList = (props) => {
-//   return (
-//     <ul>
-//     {props.videos.length}
-//     </ul>
-//   );
-// }
-
 import React, { Component } from 'react';     // class based component
-class VideoList extends Component {
-  render(){
-  return (
-    <ul>
-    {this.props.videos.length-1}
-    </ul>
-  );
-}
+import VideoListItem from './video_list_item';
+
+
+const VideoList = (props) => {
+
+    const videoItems = props.videos.map((video) => {
+      return (
+        <VideoListItem
+        onVideoSelect={props.onVideoSelect}
+        key={video.etag}
+        video={video}/>
+      );
+    });
+    console.log(videoItems);
+    return (
+      <ul className="col-md-4 list-group">
+      {videoItems}
+      </ul>
+    );
 }
 export default VideoList;

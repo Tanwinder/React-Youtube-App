@@ -1,3 +1,11 @@
+*{
+  padding: 0;
+  margin: 0;
+}
 body {
   background-color: green;
+  font-size: 16px;
+}
+.my-app{
+  border: 5px solid red;
 }
