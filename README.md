@@ -1,1 +1,4 @@
-# React-videos-App
+React-videos-app
+
+> npm install
+> npm start
