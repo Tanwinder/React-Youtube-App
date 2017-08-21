@@ -12,7 +12,6 @@ const VideoList = (props) => {
         video={video}/>
       );
     });
-    console.log(videoItems);
     return (
       <ul className="video-list-group">
       {videoItems}
