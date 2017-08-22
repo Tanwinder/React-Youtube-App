@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 
-// const SearchBar = () => {   // functional component
-//   return <input />;
-// };
+const SearchBar = () => {   // functional component
+  return <input />;
+};
 
 class SearchBar extends Component {
   constructor(props) {
